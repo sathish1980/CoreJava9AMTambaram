@@ -10,11 +10,11 @@ public class ScannerClass {
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println( "Please enter the first number :");
-		int value1 = sc.nextInt();
+		String value1 = sc.nextLine();
 		System.out.println( "Please enter the second number :");
-		int value2 = sc.nextInt();
+		String value2 = sc.nextLine();
 		
-		int c =value1+value2;
+		String c =value1+value2;
 		/*
 		 * nextBoolean()	Reads a boolean value from the user
 			nextByte()	Reads a byte value from the user
