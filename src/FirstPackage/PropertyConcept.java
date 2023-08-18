@@ -11,7 +11,7 @@ import java.util.Properties;
 
 public class PropertyConcept {
 	
-	String filepath ="C:\\Users\\sathishkumar\\eclipse-workspace\\CoreJava9AMTambaram\\Env\\";
+	String filepath =System.getProperty("user.dir")+"CoreJava9AMTambaram\\Env\\";
 	String filename ="config.properties";
 	
 	/*
