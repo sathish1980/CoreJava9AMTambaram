@@ -1,8 +1,8 @@
 package Secondpackage;
 
+import Inheritance.BesantMainBranch;
 
-
-public class Protectimplementation {
+public class Protectimplementation extends BesantMainBranch{
 	
 	public void getDataFromVariable()
 	{
