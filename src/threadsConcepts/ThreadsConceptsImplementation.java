@@ -1,6 +1,6 @@
 package threadsConcepts;
 
-class HDFC extends Thread
+class HDFC implements Runnable
 {
 	public void run()
 	{
@@ -35,11 +35,12 @@ public class ThreadsConceptsImplementation {
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 		ThreadsConceptsImplementation T = new ThreadsConceptsImplementation();
-		HDFC H = new HDFC();
+		//HDFC H = new HDFC();
+		Runnable RT = new HDFC();
 		SBI S = new SBI();
+		Thread H = new Thread(RT);
 		
-		
-		H.start();
+		H.run();
 		S.start();
 		H.setName("HDFC Thread");
 		if(H.isAlive())
